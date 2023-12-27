@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      div {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form
+        method="post"
+        action="https://script.google.com/macros/s/AKfycbytjnl8L3bq1Mva38BHPlBrrDEQLNW-f5FJr1pHQoAGkV0_Bz5iaIxUPS0tZKQ-dA795A/exec"
+      >
+        <h2>Send Your Messages!</h2>
+        <input type="text" name="Name" placeholder="Name" />
+        <input type="email" name="Email" placeholder="Email" />
+        <input type="text" name="Phone" placeholder="Phone" />
+        <textarea name="Message" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="Send" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
